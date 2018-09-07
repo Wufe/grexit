@@ -1,0 +1,68 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    // font-size: 10px;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    background: #3f4c6b; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #3f4c6b 0%, #3f4c6b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #3f4c6b 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #3f4c6b 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.particles-container__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.particles-container__particles {
+    width: 100%;
+    height: 100%;
+}
+
+.particles-container__canvas {
+    position: relative;
+}
+
+.text-container__wrapper {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.text-container__align-text {
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(white, .8);
+    font-weight: bold;
+    text-shadow: -1px 0 0px black, 0px -1px 0 black, 1px 0 0 black, 0 1px 0 black;
+    font-family: 'Indie Flower', cursive;
+}
+
+.text-container__title {}
+
+.text-container__timer, .text-container__first-description, .text-container__last-description {
+    font-size: 3rem;
+    color: rgba(black, 1);
+    text-shadow: -1px 0 0px white, 0px -1px 0 white, 1px 0 0 white, 0 1px 0 white;
+    text-transform: uppercase;
+
+    &.text-container__first-description, &.text-container__last-description {
+        font-size: 2.3rem;
+        color: navy;
+    }
+}
