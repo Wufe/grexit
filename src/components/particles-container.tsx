@@ -9,7 +9,7 @@ export class ParticlesContainer extends React.PureComponent {
                     params={{
                         particles: {
                             number: {
-                                value: 30
+                                value: 100
                             },
                             color: {
                                 value: '#FFFFFF'
@@ -25,9 +25,10 @@ export class ParticlesContainer extends React.PureComponent {
                                 value: 1
                             },
                             move: {
-                                speed: 1
+                                speed: 2
                             }
-                        }
+                        },
+                        fps_limit: 28
                     }}
                     className="particles-container__particles"
                     canvasClassName="particles-container__canvas"/>
