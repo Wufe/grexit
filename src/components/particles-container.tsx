@@ -9,7 +9,11 @@ export class ParticlesContainer extends React.PureComponent {
                     params={{
                         particles: {
                             number: {
-                                value: 100
+                                value: 70,
+                                density: {
+                                    value_area: 3000,
+                                    enable: true
+                                }
                             },
                             color: {
                                 value: '#FFFFFF'
@@ -28,7 +32,8 @@ export class ParticlesContainer extends React.PureComponent {
                                 speed: 2
                             }
                         },
-                        fps_limit: 28
+                        fps_limit: 28,
+                        retina_detect: true
                     }}
                     className="particles-container__particles"
                     canvasClassName="particles-container__canvas"/>
